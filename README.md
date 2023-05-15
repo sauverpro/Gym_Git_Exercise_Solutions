@@ -523,3 +523,155 @@ To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
 branch 'ft/-bundle-2' set up to track 'origin/ft/-bundle-2'.
 
 ```
+## *solution 2*
+
+``` bash
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git pull
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Already up to date.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout ft/service-redesign
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+error: pathspec 'ft/service-redesign' did not match any file(s) known to git
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/service-redesign
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   servises.html
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git commit -m "servises modified"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/service-redesign c1740bd] servises modified
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 67.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/sauverpro/Gym_Git_Exercise_Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git pull
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 706 bytes | 0 bytes/s, done.
+From https://github.com/sauverpro/Gym_Git_Exercise_Solutions
+   4f61719..00ddde4  main       -> origin/main
+Updating 4f61719..00ddde4
+Updating 4f61719..00ddde4
+Updating 4f61719..00ddde4
+Fast-forward
+ servises.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Fast-forward
+ servises.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout ft/service-redisign
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+error: pathspec 'ft/service-redisign' did not match any file(s) known to git
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout ft/service-redesign
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ 
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git merge main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+$ git merge main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Auto-merging servises.html
+#
+CONFLICT (content): Merge conflict in servises.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign|MERGING)
+$ git merge --continue
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/service-redesign d70d841] rrge branch 'main' into ft/service-redesign
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/service-redesign
+Your branch is ahead of 'origin/ft/service-redesign' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/service-redesign)
+$ git push -f
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 248 bytes | 22.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+   c1740bd..d70d841  ft/service-redesign -> ft/service-redesign
+
+
+```
