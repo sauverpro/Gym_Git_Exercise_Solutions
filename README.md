@@ -464,3 +464,62 @@ On branch dev
 Your branch is up to date with 'origin/dev'.
 nothing to commit, working tree clean
 ```
+## ***Bundle 2***
+### *solution 1*
+
+``` bash
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (dev)
+$ git checkout -b ft/-bundle-2
+Switched to a new branch 'ft/-bundle-2'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/-bundle-2)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/-bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        servises.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/-bundle-2)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/-bundle-2)
+$ git commit -m "this the servise page"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/-bundle-2 6161c4d] this the servise page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 servises.html
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/-bundle-2)
+$ git push
+fatal: The current branch ft/-bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/-bundle-2
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/-bundle-2)
+$ git push --set-upstream origin ft/-bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 510 bytes | 13.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/-bundle-2' on GitHub by visiting:
+remote:      https://github.com/sauverpro/Gym_Git_Exercise_Solutions/pull/new/ft/-bundle-2
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/-bundle-2 -> ft/-bundle-2
+branch 'ft/-bundle-2' set up to track 'origin/ft/-bundle-2'.
+
+```
