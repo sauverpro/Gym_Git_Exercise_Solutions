@@ -955,3 +955,146 @@ Your branch is up to date with 'origin/ft/faq-page'.
 nothing to commit, working tree clean
 
 ```
+## **solution 2**
+
+``` bash
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout ft/faq-page
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git commit -m "feat: home page redesign"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[main 44435e2] feat: home page redesign
+ 1 file changed, 1 insertion(+)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 1024 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: Bypassed rule violations for refs/heads/main:
+remote:
+remote: - At least 1 approving review is required by reviewers with write access.
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+   36edd9f..44435e2  main -> main
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout ft/home-page-redesign
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'ft/home-page-redesign'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git rebase main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git commit -m "feat: adding description"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/home-page-redesign a5cfec4] feat: adding description
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 67.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/sauverpro/Gym_Git_Exercise_Solutions/pull/new/ft/home-page-redesign  
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/home-page-redesign)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/home-page-redesign
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+nothing to commit, working tree clean
+
+
+```
