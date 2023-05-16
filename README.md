@@ -675,3 +675,283 @@ To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
 
 
 ```
+# Bundle 3
+
+## **solution 1**
+
+``` bash
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/team-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git commit -m "this is the team page"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/team-page c2e5be1] this is the team page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/team-page
+nothing to commit, working tree clean
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 496 bytes | 70.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/sauverpro/Gym_Git_Exercise_Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git checkout ft/team-page
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+commit c2e5be1822530a01640733257ad80aa2446fda7e (HEAD -> ft/team-page, origin/ft/team-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 01:26:40 2023 +0300
+
+    this is the team page
+
+commit 47d7545be9dd2494fa847773640233452404be88 (main, ft/contact-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 01:16:57 2023 +0300
+
+    bundle 2 selution 2
+
+commit 7c20006e7d97083cdd984077aec93e145eb06efe
+:...skipping...
+commit c2e5be1822530a01640733257ad80aa2446fda7e (HEAD -> ft/team-page, origin/ft/team-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 01:26:40 2023 +0300
+
+    this is the team page
+
+commit 47d7545be9dd2494fa847773640233452404be88 (main, ft/contact-page)
+commit c2e5be1822530a01640733257ad80aa2446fda7e (HEAD -> ft/team-page, origin/ft/team-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 01:26:40 2023 +0300
+
+    this is the team page
+
+commit 47d7545be9dd2494fa847773640233452404be88 (main, ft/contact-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 01:16:57 2023 +0300
+
+    bundle 2 selution 2
+
+commit 7c20006e7d97083cdd984077aec93e145eb06efe
+Merge: 00ddde4 d70d841
+Author: CYUSA Alain Tresor <alaintresorcyusa683@gmail.com>
+Date:   Mon May 15 21:53:07 2023 +0200
+
+    Merge pull request #4 from sauverpro/ft/service-redesign
+    
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/team-page)
+$ git checkout ft/contact-page
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'ft/contact-page'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git cherry-pick c2e5be1822530a01640733257ad80aa2446fda7e
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/contact-page a4b2728] this is the team page
+ Date: Tue May 16 01:26:40 2023 +0300
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/contact-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git commit -m "This is contact page"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/contact-page 5c5e64c] This is contact page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 contact.html
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 808 bytes | 80.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 808 bytes | 80.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/sauverpro/Gym_Git_Exercise_Solutions/pull/new/ft/contact-page        
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git commit -m "feat: faq page"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[ft/faq-page f0f9ef2] feat: faq page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 456 bytes | 50.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/sauverpro/Gym_Git_Exercise_Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/sauverpro/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git log
+commit f0f9ef24b817e93b3a4aac8224f2af4f0b9764e8 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 11:04:19 2023 +0300
+
+    feat: faq page
+
+commit 5c5e64c46785550f4c4e6a319b086b5e018b1ddb (origin/ft/contact-page, ft/contact-page)
+Author: sauvepro <unsauvechriss@gmail.com>
+Date:   Tue May 16 02:27:41 2023 +0300
+
+    This is contact page
+
+commit a4b2728a7febd4f2365872fabf74a8f61fc26d9e
+Author: sauvepro <unsauvechriss@gmail.com>
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git push
+Everything up-to-date
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git push
+Everything up-to-date
+
+SauvePro@SauverPro MINGW64 /e/ojemba/git/Gym _Git_Exercise_Solutions (ft/faq-page)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch ft/faq-page
+Your branch is up to date with 'origin/ft/faq-page'.
+
+nothing to commit, working tree clean
+
+```
